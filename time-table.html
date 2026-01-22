@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/time-table.css" />
+    <title>タイムテーブル</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1><a href="index.html">Spring Music Festival 2026</a></h1>
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <img src="./img/menu.png" alt="メニュー" class="hamburger-icon" />
+        <img src="./img/close.png" alt="閉じる" class="close-icon" />
+        <p>menu</p>
+      </button>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="time-table.html">タイムテーブル</a></li>
+          <li><a href="#lineup">出演者一覧</a></li>
+          <li><a href="#tickets">開催案内</a></li>
+          <li><a href="#contact">グッツ(Goods)紹介</a></li>
+          <li><a href="#contact">来場者ガイド</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>タイムテーブル</h1>
+      <div class="date-buttons">
+        <button class="date-btn active" data-date="5/2">5/2</button>
+        <button class="date-btn" data-date="5/3">5/3</button>
+      </div>
+
+      <!-- 5/2のタイムテーブル -->
+      <table class="timetable" id="timetable-5-2">
+        <thead>
+          <tr>
+            <th>時間</th>
+            <th>メインステージ</th>
+            <th>サブステージ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:00-11:40</td>
+            <td>
+              <a href="artist-detail.html?name=the-blossom-drive"
+                >The Blossom Drive</a
+              >
+            </td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>12:00-12:40</td>
+            <td>
+              <a href="artist-detail.html?name=takahashi-rio">高橋リオ</a>
+            </td>
+            <td>
+              <a href="artist-detail.html?name=morning-echoes"
+                >Morning Echoes</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>13:00-13:40</td>
+            <td>-</td>
+            <td>
+              <a href="artist-detail.html?name=velvet-groove">Velvet Groove</a>
+            </td>
+          </tr>
+          <tr>
+            <td>14:00-14:40</td>
+            <td><a href="artist-detail.html?name=dj-breeze">DJ Breeze</a></td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>15:00-15:40</td>
+            <td><a href="artist-detail.html?name=nakamura-ren">中村蓮</a></td>
+            <td>
+              <a href="artist-detail.html?name=morning-echoes"
+                >Morning Echoes</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>16:00-16:40</td>
+            <td>-</td>
+            <td>
+              <a href="artist-detail.html?name=velvet-groove">Velvet Groove</a>
+            </td>
+          </tr>
+          <tr>
+            <td>17:00-17:40</td>
+            <td>
+              <a href="artist-detail.html?name=the-blossom-drive"
+                >The Blossom Drive</a
+              ><br />~スペシャルライブ
+            </td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 5/3のタイムテーブル -->
+      <table class="timetable" id="timetable-5-3" style="display: none">
+        <thead>
+          <tr>
+            <th>時間</th>
+            <th>メインステージ</th>
+            <th>サブステージ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:00-11:40</td>
+            <td>
+              <a href="artist-detail.html?name=crimson-waves">Crimson Waves</a>
+            </td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>12:00-12:40</td>
+            <td>
+              <a href="artist-detail.html?name=miyamoto-sakura">宮本サクラ</a>
+            </td>
+            <td><a href="artist-detail.html?name=fuga">風雅(ふうが)</a></td>
+          </tr>
+          <tr>
+            <td>13:00-13:40</td>
+            <td>-</td>
+            <td>
+              <a href="artist-detail.html?name=neon-lights">Neon Lights</a>
+            </td>
+          </tr>
+          <tr>
+            <td>14:00-14:40</td>
+            <td>
+              <a href="artist-detail.html?name=morishita-haruto">森下晴人</a>
+            </td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>15:00-15:40</td>
+            <td>
+              <a href="artist-detail.html?name=miyamoto-sakura">宮本サクラ</a>
+            </td>
+            <td><a href="artist-detail.html?name=fuga">風雅(ふうが)</a></td>
+          </tr>
+          <tr>
+            <td>16:00-16:40</td>
+            <td>-</td>
+            <td>
+              <a href="artist-detail.html?name=neon-lights">Neon Lights</a>
+            </td>
+          </tr>
+          <tr>
+            <td>17:00-19:30</td>
+            <td>
+              <a href="artist-detail.html?name=horizon-strings"
+                >Horizon Strings</a
+              ><br />-フィナーレ
+            </td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p>&copy; 2025 Morijyobi. All rights reserved.</p>
+    </footer>
+    <script src="./js/header.js"></script>
+    <script src="./js/timetable.js"></script>
+  </body>
+</html>
