@@ -1,7 +1,5 @@
-/* お問い合わせ確認ページのスタイル */
 main {
   padding: 4%;
-  max-width: 375px;
   margin: 0 auto;
   background-color: #ffffff;
   flex: 1;
@@ -16,14 +14,12 @@ main h1 {
   font-weight: 500;
 }
 
-/* 確認内容 */
 .confirm-content {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 6%;
 }
 
-/* 確認項目 */
 .confirm-item {
   display: flex;
   margin-bottom: 4%;
@@ -36,7 +32,6 @@ main h1 {
   border-bottom: none;
 }
 
-/* ラベル */
 .confirm-label {
   width: 35%;
   color: #000000;
@@ -44,14 +39,12 @@ main h1 {
   flex-shrink: 0;
 }
 
-/* 値 */
 .confirm-value {
   width: 65%;
   color: #000000;
   word-wrap: break-word;
 }
 
-/* ボタングループ */
 .button-group {
   display: flex;
   gap: 4%;
@@ -60,7 +53,6 @@ main h1 {
   justify-content: center;
 }
 
-/* 戻るボタン */
 .back-btn {
   width: 45%;
   padding: 3% 0;
@@ -79,7 +71,6 @@ main h1 {
   opacity: 0.8;
 }
 
-/* 送信ボタン */
 .submit-btn {
   width: 45%;
   padding: 3% 0;
@@ -96,20 +87,4 @@ main h1 {
 
 .submit-btn:hover {
   opacity: 0.8;
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 375px) {
-  .confirm-item {
-    flex-direction: column;
-  }
-
-  .confirm-label {
-    width: 100%;
-    margin-bottom: 1%;
-  }
-
-  .confirm-value {
-    width: 100%;
-  }
 }
