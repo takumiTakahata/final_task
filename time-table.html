@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/time-table.css" />
     <title>タイムテーブル</title>
   </head>
   <body>
@@ -25,9 +26,113 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <h1>タイムテーブル</h1>
+      <div class="date-buttons">
+        <button class="date-btn active" data-date="5/2">5/2</button>
+        <button class="date-btn" data-date="5/3">5/3</button>
+      </div>
+
+      <!-- 5/2のタイムテーブル -->
+      <table class="timetable" id="timetable-5-2">
+        <thead>
+          <tr>
+            <th>時間</th>
+            <th>メインステージ</th>
+            <th>サブステージ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:00～<br />11:40</td>
+            <td>The Blossom Drive</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>12:00～<br />12:40</td>
+            <td>高橋リオ</td>
+            <td>Morning Echoes</td>
+          </tr>
+          <tr>
+            <td>13:00～<br />13:40</td>
+            <td>-</td>
+            <td>Velvet Groove</td>
+          </tr>
+          <tr>
+            <td>14:00～<br />14:40</td>
+            <td>DJ Breeze</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>15:00～<br />15:40</td>
+            <td>中村蓮</td>
+            <td>Morning Echoes</td>
+          </tr>
+          <tr>
+            <td>16:00～<br />16:40</td>
+            <td>-</td>
+            <td>Velvet Groove</td>
+          </tr>
+          <tr>
+            <td>17:00～<br />17:40</td>
+            <td>The Blossom Drive<br />~スペシャルライブ</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 5/3のタイムテーブル -->
+      <table class="timetable" id="timetable-5-3" style="display: none">
+        <thead>
+          <tr>
+            <th>時間</th>
+            <th>メインステージ</th>
+            <th>サブステージ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:00-11:40</td>
+            <td>Crimson Waves</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>12:00-12:40</td>
+            <td>宮本サクラ</td>
+            <td>風雅(ふうが)</td>
+          </tr>
+          <tr>
+            <td>13:00-13:40</td>
+            <td>-</td>
+            <td>Neon Lights</td>
+          </tr>
+          <tr>
+            <td>14:00-14:40</td>
+            <td>森下晴人</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>15:00-15:40</td>
+            <td>宮本サクラ</td>
+            <td>風雅(ふうが)</td>
+          </tr>
+          <tr>
+            <td>16:00-16:40</td>
+            <td>-</td>
+            <td>Neon Lights</td>
+          </tr>
+          <tr>
+            <td>17:00-19:30</td>
+            <td>Horizon Strings<br />-フィナーレ</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
     <footer>
       <p>&copy; 2025 Morijyobi. All rights reserved.</p>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/timetable.js"></script>
   </body>
 </html>
