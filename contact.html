@@ -119,5 +119,29 @@
       <p>&copy; 2025 Morijyobi. All rights reserved.</p>
     </footer>
     <script src="./js/header.js"></script>
+    <script>
+      document
+        .querySelector(".contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const inquiryType = document.querySelector(
+            'input[name="inquiry-type"]:checked',
+          );
+          const inquiryLabels = {
+            ticket: "チケットについて",
+            venue: "会場について",
+            info: "公開情報について",
+            other: "その他",
+          };
+          const params = new URLSearchParams({
+            type: inquiryLabels[inquiryType?.value] || "",
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            message: document.getElementById("message").value,
+          });
+          window.location.href = "contact-confirm.html?" + params.toString();
+        });
+    </script>
   </body>
 </html>
