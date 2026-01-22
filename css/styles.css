@@ -21,7 +21,7 @@ h1 {
 }
 
 .site-header {
-  background-color: #ff5f00;
+  background: linear-gradient(to right, #ffd700, #ff5f00);
   position: relative;
   width: 100%;
   max-width: 375px;
@@ -78,10 +78,11 @@ h1 {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #ff5f00;
+  background-color: rgba(255, 95, 0, 0.95);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
+  z-index: 999;
 }
 
 .nav.active {
@@ -106,6 +107,7 @@ h1 {
   text-decoration: none;
   font-weight: 500;
   transition: opacity 0.3s;
+  padding: 12px 20px;
 }
 
 .nav a:hover {
