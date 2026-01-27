@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Strings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        img {
+            width: 350px;
+        }
+
+        .container {
+            background-color: white;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        .section-title {
+            position: relative;
+            padding: 10px 0 10px 30px;
+            width: 300px;
+            font-size: 15px;
+        }
+
+        /* 左線 */
+        .section-title::before {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: 11px;
+            height: 50%;
+            border-left: 2px solid lightblue;
+        }
+
+        /* 下線 */
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 12px;
+            bottom: 0;
+            width: 90%;
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Spring Music Festival 2026</h1>
+        <button class="hamburger" id="hamburger" aria-label="メニュー">
+            <img src="./img/menu.png" alt="メニュー" class="hamburger-icon" />
+            <img src="./img/close.png" alt="閉じる" class="close-icon" />
+            <p>menu</p>
+        </button>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="time-table.html">タイムテーブル</a></li>
+                <li><a href="artists_index.html">出演者一覧</a></li>
+                <li><a href="ticket.html">開催案内</a></li>
+                <li><a href="goods.html">グッツ(Goods)紹介</a></li>
+                <li><a href="guide.html">来場者ガイド</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1 class="text-center mt-4 border-bottom w-100 border-3 border-black">Horizon Strings
+        </h1>
+        <img class="mt-4 mb-4" src="img/HorizonStrings.webp">
+        <h1 class="section-title ms-4">プロフィール</h1>
+        <p class="ms-4 me-4">
+            若手音楽家を中心に結成された室内オーケストラ。クラシックの名曲から、
+            映画音楽、アニメ音楽まで幅広いレパートリーで、クラシック音楽の魅力を伝える。
+            「地平線(Horizon)まで響く弦楽の音色」をコンセプトに、
+            野外での演奏にも積極的に取り組んでいる。今回のフェスでは、
+            春をテーマにしたクラシック曲とオリジナル曲を織り交ぜた特別プログラムを披露。
+            夕暮れ時の壮大な演奏で、フェスのフィナーレを飾る。
+        </p>
+
+        <h1 class="section-title ms-4">ジャンル</h1>
+        <p class="ms-4 me-4">クラシック/オーケストラ</p>
+
+        <h1 class="section-title ms-4">出演日時・ステージ</h1>
+        <p class="ms-4 me-4">5月4日(日) 17:00-18:30
+        <p>
+        <p class="ms-4 me-4">メインステージ</p>
+
+        <h1 class="section-title ms-4">代表曲</h1>
+        <p class="ms-4">1. Spring Symphony</p>
+        <p class="ms-4">2. 四季より「春」(ヴィヴァルディ)</p>
+        <p class="ms-4">3. Horizon's Edge(オリジナル)</p>
+
+        <h1 class="section-title ms-4">SNS</h1>
+        <p class="ms-4">Twitter　　　　　 　:@horizon_strings<br>Instagram　　　　　:@horizonstrings_orchestra<br>YouTube　　 　
+            　　:Horizon Strings Orchestra
+
+        </p>
+
+        <div class="text-end">
+            <a href="artists_index.html"><button type="button"
+                    class="btn btn-info me-4 mb-4 text-white w-30 rounded-0">アーティスト一覧
+                    ></button></a>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <footer>
+        <p>&copy; 2025 Morijyobi. All rights reserved.</p>
+    </footer>
+    <script src="./js/header.js"></script>
+</body>
+
+</html>
