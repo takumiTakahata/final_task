@@ -1,0 +1,73 @@
+.headline{
+            font-size: 24px;
+            display: inline-block; 
+            border-bottom: 2px solid #C9C9C9; 
+            width: 80%;          
+            box-sizing: border-box;
+            margin-left: 10%;
+            font-weight: 400;
+        }
+
+        .headline-top{
+            text-align: center;
+            border-bottom: 2px solid #000000; 
+            margin-top: 2%;
+        }
+
+        table,td{
+            text-align: center;
+            border:1px solid black;
+            border-collapse: collapse;
+            margin:0 auto;
+            font-size: 14px;
+        }
+        
+        table{
+            width: 75%;
+            margin-bottom: 2%;
+            margin-top: 2%;
+        }
+
+        td{
+            padding: 2%;
+        }
+
+        .description{
+            display: inline-block; 
+            width: 80%;
+            font-size:12px;
+            margin-top: 2%;
+            margin-left: 14%;
+        }
+
+        main{
+            background-color: white;
+        }
+
+        .purchase-ticket{
+            padding-bottom: 6%;
+        }
+
+        .purchase-ticket-button {
+            margin: 0 auto;
+            margin-top: 6%;
+            text-align: center;
+            background-color: #00a0ff;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 16px;
+            display: block;
+            padding: 4% 0;
+            width: 90%;
+        }
+         @media (max-width: 767.98px){
+            table{
+                width: 75%;
+            }
+
+            td{
+                padding:2%;
+            }
+         }

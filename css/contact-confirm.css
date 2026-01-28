@@ -1,0 +1,90 @@
+main {
+  padding: 4%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  flex: 1;
+  width: 100%;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 6%;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.confirm-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 6%;
+}
+
+.confirm-item {
+  display: flex;
+  margin-bottom: 4%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+}
+
+.confirm-item:last-child {
+  border-bottom: none;
+}
+
+.confirm-label {
+  width: 35%;
+  color: #000000;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.confirm-value {
+  width: 65%;
+  color: #000000;
+  word-wrap: break-word;
+}
+
+.button-group {
+  display: flex;
+  gap: 4%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.back-btn {
+  width: 45%;
+  padding: 3% 0;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+.submit-btn {
+  width: 45%;
+  padding: 3% 0;
+  background-color: #00a0ff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.8;
+}

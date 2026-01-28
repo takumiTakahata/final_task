@@ -1,0 +1,48 @@
+.headline{
+            font-size: 24px;
+            display: inline-block; 
+            border-bottom: 2px solid #C9C9C9; 
+            width: 80%;          
+            box-sizing: border-box;
+            margin-left: 10%;
+            font-weight: 400;
+        }
+
+        .headline-top{
+            text-align: center;
+            border-bottom: 2px solid #000000; 
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        .type{
+            display: inline-block; 
+            width: 100%;
+
+        }
+
+        .question{
+            font-size: 16px;
+            margin-left: 14%;
+            margin-top: 2%;
+        }
+
+        .answer{
+            font-size:12px;
+            margin-left: 14%;
+            margin-bottom: 2%;
+        }
+
+        .qa{
+            width: 90%;
+        }
+
+        main{
+            background-color: white;
+        }
+
+         @media (max-width: 767.98px){
+            .headline-top{
+                margin-bottom: 4%;
+            }
+         }

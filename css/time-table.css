@@ -1,0 +1,136 @@
+/* タイムテーブルページのスタイル */
+main {
+  padding: 4%;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  flex: 1;
+  width: 100%;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 4%;
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  padding: 2% 0 2% 2%;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* 日付ボタン */
+.date-buttons {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 4%;
+  justify-content: center;
+}
+
+.date-btn {
+  flex: 1;
+  padding: 2% 4%;
+  background: linear-gradient(to bottom, #ffd700, #ff5f00);
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  /* transition: opacity 0.3s ease; */
+}
+
+.date-btn:hover {
+  opacity: 0.8;
+}
+
+.date-btn.active {
+  background: #ff5f00;
+  color: #ffffff;
+}
+
+/* タイムテーブル */
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 4px solid;
+  border-image: linear-gradient(to bottom, #ff5f00, #ffd700) 1;
+  table-layout: fixed;
+}
+
+.timetable thead {
+  background-color: #ff5f00;
+  color: #ffffff;
+}
+
+.timetable th {
+  padding: 2%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.timetable th:nth-child(1) {
+  width: 24%;
+}
+
+.timetable th:nth-child(2) {
+  width: 38%;
+}
+
+.timetable th:nth-child(3) {
+  width: 38%;
+}
+
+.timetable tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.timetable tbody tr:last-child {
+  border-bottom: none;
+}
+
+.timetable td {
+  padding: 2%;
+  text-align: center;
+  font-size: 12px;
+  color: #000000;
+}
+
+.timetable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.timetable tbody tr:hover {
+  background-color: #fff5e6;
+}
+
+/* 出演者リンク */
+.timetable td a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  /* transition: color 0.3s ease; */
+}
+
+.timetable td a:hover {
+  color: #00a0ff;
+  text-decoration: underline;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 375px) {
+  .timetable th,
+  .timetable td {
+    padding: 2%;
+    font-size: 12px;
+  }
+
+  .date-btn {
+    padding: 2% 4%;
+    font-size: 12px;
+  }
+}
