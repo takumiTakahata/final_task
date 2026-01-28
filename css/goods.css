@@ -1,0 +1,50 @@
+p {
+            font-family: sans-serif, sans-serif;
+            font-size: 16px;
+        }
+        .section {
+            padding: 2%;
+        }
+
+        p.title {
+            font-size: 24px;
+            text-align: center;
+
+            width: 350px;
+            border-bottom: 1px solid black;
+
+            margin: 2% auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .goods_item {
+            width: 45%;
+            margin: 2%;
+            margin-right: auto;
+        }
+
+        .goods_item img {
+            height: auto;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 2%;
+        }
+
+        span.color_red {
+            color: red;
+        }
+
+        span.font_bold {
+            font-weight: bold;
+        }
+
+        .main {
+            background-color: white;
+        }
