@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-image: url("../img/key_visual.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  max-width: 375px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+.site-header {
+  background: linear-gradient(to right, #ffd700, #ff5f00);
+  position: relative;
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2%;
+}
+
+.site-header h1 {
+  font-family: "Poppins", sans-serif;
+  color: #f7f7f7;
+  flex: 1;
+}
+
+.site-header h1 a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+/* ハンバーガーボタン */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hamburger img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.hamburger p {
+  color: #f7f7f7;
+  font-size: 12px;
+  margin: 0;
+}
+
+.hamburger .close-icon {
+  display: none;
+}
+
+.hamburger.active .hamburger-icon {
+  display: none;
+}
+
+.hamburger.active .close-icon {
+  display: block;
+}
+
+/* ナビゲーション（スマホ特化型） */
+.nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 95, 0, 0.95);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  z-index: 999;
+}
+
+.nav.active {
+  max-height: 400px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+}
+
+.nav li {
+  border-bottom: 1px solid rgba(247, 247, 247, 0.2);
+}
+
+.nav a {
+  display: block;
+  color: #f7f7f7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+  padding: 12px 20px;
+}
+
+.nav a:hover {
+  opacity: 0.8;
+}
+
+/* footer */
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 20px 10px 10px;
+  color: #f7f7f7;
+  font-size: 12px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.footer-nav li {
+  text-align: left;
+  justify-content: center;
+}
+
+.footer-nav a {
+  color: #f7f7f7;
+  font-size: 12px;
+  transition: opacity 0.3s;
+}
+
+.footer-nav a:hover {
+  opacity: 0.7;
+}
+
+footer p {
+  margin-top: 15px;
+  padding-top: 15px;
+}
